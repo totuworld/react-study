@@ -1,7 +1,5 @@
 import { combineReducers } from 'redux';
 
-import helloWorld from './helloWorld';
+const rootReducer = combineReducers({ dummy: (s = []) => s });
 
-export default combineReducers({
-  helloWorld,
-});
+export default rootReducer;
